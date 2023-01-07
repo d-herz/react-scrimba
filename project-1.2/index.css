@@ -1,4 +1,27 @@
-html, body {
-    margin: 0;
-    padding: 0;
+.navigat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 5px 5px black;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-items > li {
+    padding: 10px;
+}
+
+.imageWidth{
+    width: 50px;
+}
+
+.footage{
+    background-color: gray;
+    color: white;
 }
