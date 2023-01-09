@@ -10,7 +10,6 @@ function Main() {
         <li> Well over 100k stars on Github</li>
         <li> Maintained by Facebook</li>
         <li> Powers thousands of enterprise apps, including mobile apps</li>
-        <li></li>
       </ul>
     </main>
   )
