@@ -12,7 +12,7 @@ function Info() {
           <a href="#"><i className="fa-solid fa-envelope"></i> Email </a>
         </button>
         <button>
-          <a href="#"><i className="fa-brands fa-linkedin"></i> LinkedIn </a>
+          <a href=" https://www.linkedin.com/in/d-herz/" target="_blank"><i className="fa-brands fa-linkedin"></i> LinkedIn </a>
         </button>
       </div>
     </div>
