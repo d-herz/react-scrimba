@@ -4,8 +4,9 @@ export default function Joke(props) {
   console.log(props)
   return (
     <div className="joke-container">
-      <h1>{props.setup}</h1>
-      <h2>{props.punchline}</h2>
+      <h3>{props.setup}</h3>
+      <p>{props.punchline}</p>
+      <hr />
     </div>
     
   )
