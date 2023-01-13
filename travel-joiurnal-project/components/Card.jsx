@@ -6,19 +6,19 @@ export default function Card(props) {
     <div className="card--main">
 
       <div className="card--img">
-        <img src={props.imageUrl}></img>
+        <img src={props.item.imageUrl}></img>
       </div>
 
       <div className="card--info">
         <div className="card--title">
-          <span><i className="fa-solid fa-location-dot"></i> {props.location}</span>
-          <a href={props.googleMapsUrl}>View on Google Maps</a>
-          <h1>{props.title}</h1>
+          <span><i className="fa-solid fa-location-dot"></i> {props.item.location}</span>
+          <a href={props.item.googleMapsUrl}>View on Google Maps</a>
+          <h1>{props.item.title}</h1>
         </div>
 
         <div className="card--details">
-          <h3>{props.startDate} - {props.endDate}</h3>
-          <p>{props.description}</p>
+          <h3>{props.item.startDate} - {props.item.endDate}</h3>
+          <p>{props.item.description}</p>
         </div>
 
       </div>
