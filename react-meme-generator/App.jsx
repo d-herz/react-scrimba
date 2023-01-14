@@ -1,14 +1,15 @@
 import React from "react";
 import Navbar from "./components/Navbar"
-import Form from "./components/Form"
+import MemeForm from "./components/MemeForm"
 
 export default function App() {
+
   return (
     <div className="container" >
 
       <Navbar />
 
-      <Form />
+      <MemeForm />
     </div>
 
   )
