@@ -13,8 +13,7 @@ export default function MemeForm() {
     // console.log(`URL: ${url}`)
 
     setMemeImage(url)
-
-
+    //we don't need a CB here because we don't care what the previous value of state was in this case
   }
 
   return (
