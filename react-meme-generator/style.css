@@ -53,3 +53,8 @@ main{
   font-family: "Karla", sans-serif;
   grid-column: 1/-1;
 }
+
+.meme--image{
+  max-width:fit-content;
+  margin: 0 auto;
+}
