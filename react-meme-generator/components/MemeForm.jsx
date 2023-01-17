@@ -3,7 +3,14 @@ import memesData from "../memesData.js"
 
 export default function MemeForm() {
 
-  const [memeImage, setMemeImage ] = React.useState("")
+  // const [memeImage, setMemeImage] = React.useState("http://i.imgflip.com/1bij.jpg")
+  const [meme, setMeme] = React.useState({
+    topText: '',
+    bottomText: '',
+    randomImage: "http://i.imgflip.com/1bij.jpg",
+  })
+
+  const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
   const fetchMeme = () => {
     const memeArr = memesData.data.memes
@@ -12,7 +19,12 @@ export default function MemeForm() {
     // console.log(ranNum)
     // console.log(`URL: ${url}`)
 
-    setMemeImage(url)
+    setMeme(prevMeme => {
+      return {
+        ...prevMeme,
+        randomImage: url
+      }
+    })
     //we don't need a CB here because we don't care what the previous value of state was in this case
   }
 
@@ -39,7 +51,7 @@ export default function MemeForm() {
         </button> 
       </div>
 
-      <img src={memeImage} className="meme--image"/>
+      <img src={meme.randomImage} className="meme--image"/>
 
     </main>
   )
