@@ -24,7 +24,6 @@ export default function App() {
     passwordVerify: "",
     newsletter: true
   })
-  // console.log(formData)
 
   function handleChange(event) {
     // console.log(event.target.checked);
@@ -37,6 +36,8 @@ export default function App() {
       
     })
   }
+  // console.log(formData)
+
 
   function handleSubmit(event) {
     event.preventDefault()
