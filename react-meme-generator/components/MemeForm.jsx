@@ -1,16 +1,18 @@
 import React from "react";
-// import memesData from "../memesData.js"
 
 export default function MemeForm() {
 
+  //State for tracking the text input changes
   const [meme, setMeme] = React.useState({
     topText: "",
     bottomText: "",
     randomImage: "http://i.imgflip.com/1bij.jpg",
   })
   
+  //State for holding/maintaining "all memes" returned from the API, initialised to an empty array before fetch
   const [allMemes, setAllMemes] = React.useState([]) 
 
+  //Use Effect for data fetching from API, and setting returned data to our state array "allMemes" (by way of setAllMemes)
   React.useEffect(() => {
     fetch(`https://api.imgflip.com/get_memes`)
       .then(res => res.json())
@@ -20,12 +22,11 @@ export default function MemeForm() {
       })
     
   },[])
-
   
+  //function for generating a random meme image from the array when button pressed
   function fetchMeme (){
-    const memeArr = memesData.data.memes
-    const ranNum = Math.floor(Math.random() * memeArr.length);
-    const url = memeArr[ranNum].url
+    const ranNum = Math.floor(Math.random() * allMemes.length);
+    const url = allMemes[ranNum].url
     
     setMeme(prevMeme => {
       return {
@@ -35,6 +36,7 @@ export default function MemeForm() {
     })
   }
   
+  //function for tracking state changes on text input
   function handleChange(event) {
     const {name, value} = event.target
     setMeme(prevMeme => {
@@ -78,7 +80,6 @@ export default function MemeForm() {
         <h2 className="meme--text top">{meme.topText}</h2>
         <h2 className="meme--text bottom">{meme.bottomText}</h2>
       </div>
-
 
     </main>
   )
