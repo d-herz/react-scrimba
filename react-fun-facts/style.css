@@ -49,6 +49,7 @@ nav.dark{
   font-weight: 600;
   margin: 0;
 }
+
 .toggler{
   display: flex;
   align-items: center;
@@ -71,6 +72,12 @@ nav.dark{
   border: 1px solid black;
   box-sizing: content-box;
 }
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
 .toggler--slider--circle {
   height: 13px;
   width: 13px;
