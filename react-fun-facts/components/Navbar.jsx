@@ -3,7 +3,7 @@ import logo from "../images/react-logo.png"
 
 function Navbar(props) {
   return (
-    <nav className={props.darkMode ? "dark" : "light"}>
+    <nav className={props.darkMode ? "dark" : ""}>
       <img className="nav--icon" src={logo} />
       <h3 className="nav--logo_text" >ReactFacts</h3>
       <div className="toggler">
