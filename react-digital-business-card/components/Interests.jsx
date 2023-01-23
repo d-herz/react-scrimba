@@ -4,7 +4,7 @@ export default function Interests() {
   return (
     <div className="interests-container">
       <h2>Interests</h2>
-      <p>Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.</p>
+      <p>Music lover. Bird Dad. Reader. Internet fanatic. Free spirit. Coffee consumer. Action sports enthusiast. Two-wheel geek. Advocate for Education and the Climate.</p>
     </div>
   )
 }

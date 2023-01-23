@@ -5,7 +5,7 @@ import HeadShot from "../images/headshot.png"
 function Header() {
   return (
     <div>
-      <img className="headshot" src={HeadShot} />
+      <img className="headshot" src={HeadShot} alt="Portrait headshot"/>
     </div>
   )
 }
